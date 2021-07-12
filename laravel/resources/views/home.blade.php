@@ -12,6 +12,12 @@
         <!-- Styles -->
     </head>
     <body>
-    <h1>funziono cazzo</h1>
+        @foreach($movies as $movie)
+            <h2>{{ $movie['title']}}</h2>
+            <h3>{{$movie['original_title']}}</h3>
+            <h3>{{$movie['nationality']}}</h3>
+            <h3>{{$movie['date']}}</h3>
+            <h3>{{$movie['vote']}}</h3>
+        @endforeach
     </body>
 </html>
